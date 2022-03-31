@@ -9,21 +9,31 @@
 </head>
 <body onload="carregar()">
     <header>
-        <h1></h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
         <div id="msg">
-            <label for="years">Digite sua idade:</label>
-            <input type="number" id="years">
+            <p>Ano de Nascimento
+            <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Maculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
         </div>
-        <div id="foto">
-
+        <div id="res">
+            Preencha os dados acima para ver o resultado
         </div>
     </section>
     <footer>
         <p>&copy;  Cursoemvideo</p>
     </footer>
-    <script src=""></script>
+    <script src="./mold002.js"></script>
     
 </body>
 </html>
